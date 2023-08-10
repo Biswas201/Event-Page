@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*next page(login page)*/
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    box-shadow: var(--box_shadow);
+    padding: 20px;
+}
+h6{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+    font-weight: 600;
+}
+h6 span{
+    font-weight: 900;
+    font-size: 60px;
+    color: var(--main);
+}
+.form-group{
+    margin: 20px auto;
+}
+::placeholder{
+    font-weight: 600;
+}
+input,textarea{
+    border-radius: 15px !important;
+}
+label{
+    font-weight: 600;
+}
+/*next page(login page)*/
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <form action="">
+                    <h6><span>C</span>ontact Now</h6>
+
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email" required>
+                    </div>
+
+                   <div class="form-group">
+                    <label for="">How We Can Help You</label>
+                    <textarea class="form-control" required rows="6" placeholder="How Can Help You"></textarea>
+                   </div>
+                    <button class="btn">Submit Now</button>
+                    <a href="index.html" class="btn">Back to Home Page</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

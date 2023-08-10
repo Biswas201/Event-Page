@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar{
+        background-image:linear-gradient(to right,white,blue,white,green,white);
+        padding: 1% 7%;
+        text-align: center;
+        border-bottom: 2px solid #000;
+    }
+    .nav-heading h1{
+    text-align: right;
+   }
+
+   .navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+  .navbar-menu a{
+    padding: 5px 10px;
+    margin: 20px 0px;
+    background-color: transparent;
+  }
+  a{
+    color: blue;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  a:hover{
+    color: aqua;
+  }
+  .navbar h1{
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar span{
+    color: yellow;
+}
+/*our previous events*/
+body{
+    
+    background: linear-gradient(to left,yellow,white,yellow);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    position: relative;
+}
+.container img{
+    height: 50vh;
+    width: 50%;
+    object-fit: cover;
+    animation:Slide_up 1s ease;
+}
+.inner{
+    text-align: center;
+    overflow: hidden;
+    padding: 0.4em;
+}
+.inner > h1{
+    font-size: 2.5em;
+    animation: Slide_up 1.4s ease;
+}
+.inner > p{
+    font-size: 1em;
+    animation: Slide_up 1.2s ease;
+}
+@keyframes Slide_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+ </style>
+
+</head>
+<body>
+    <div class="navbar">
+ 
+        <div class="nav-heading col-4">
+            <h1>Evento</h1>
+        </div>
+ 
+        <div class="navbar-menu col-6">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Events</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+   <section>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="inner">
+              <h1>Our Current Events</h1>
+              <p>BUILD YOUR PERSONALITY</p>
+              <p>6 PERSONALITY DEVELOPMENT TIPS THAT WILL MAKE YOU UNIQUE</p>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Image/EventSpeaker.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/New-Event.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/New-Event2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="inner">
+              <h1>Our Previous Events</h1>
+              <p>GLOBAL CAREERS FAIRS</p>
+              <p>5 CAREER DEVELOPMENT TIPS THAT WILL MAKE YOU UNIQUE</p>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Image/PE1.jfif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/PE2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/PE3.jfif" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+   </section>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
